@@ -35,30 +35,26 @@ const Contact: React.FC = () => {
 
   return (
     <>
-      <Box p={2}>
-        <Box display='flex' justifyContent='center' p={1} >
-          <Typography variant='h5' >
-            Contact
-          </Typography>
-        </Box>
-        <Box className={classes.root} display='flex' justifyContent='center' p={1}>
-          <Link href='#' color='inherit'>
-            <Avatar className={classes.green}>
-              <MailIcon />
-            </Avatar>
-          </Link>
-          <Link href='#' color='inherit'>
-            <Avatar className={classes.blue}>
-              <TwitterIcon />
-            </Avatar>
-          </Link>
-          <Link href='#' color='inherit'>
-            <Avatar className={classes.purple}>
-              <GitHubIcon />
-            </Avatar>
-          </Link>
-        </Box>
-      </Box>
+    <div className="container mx-auto text-gray-700 mt-14 pt-14 font-bold" id="works">
+      <div className="flex flex-col justify-center items-center px-8">
+        <span className="text-4xl text-gray-800 mb-8">Contact</span>
+        <div className="flex flex-wrap mx-2">
+          <Box className={classes.root} display='flex' justifyContent='center' p={1}>
+            <Link href='https://twitter.com/kiu124' color='inherit' target="_blank">
+              <Avatar className={classes.blue}>
+                <TwitterIcon />
+              </Avatar>
+            </Link>
+            <Link href='https://github.com/nope0124' color='inherit' target="_blank">
+              <Avatar className={classes.purple}>
+                <GitHubIcon />
+              </Avatar>
+            </Link>
+          </Box>
+        </div>
+      </div>
+    </div>
+      
     </>
   );
 }

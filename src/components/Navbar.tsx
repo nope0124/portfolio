@@ -1,5 +1,4 @@
 import React from 'react'
-// 追記
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
@@ -8,6 +7,7 @@ import Button from '@material-ui/core/Button'
 const Navbar: React.FC = () => {
   return (
     <>
+    <div className="mx-auto">
       <AppBar
         color='default'
         position='static'
@@ -22,12 +22,12 @@ const Navbar: React.FC = () => {
               ABOUT
             </Button>
           </AnchorLink>
-          <AnchorLink href='#skills' style={{
+          <AnchorLink href='#timeline' style={{
             textDecoration: 'none',
             color: 'inherit'
           }}>
-            <Button color='inherit'>
-              SKILLS
+            <Button>
+              TIMELINE
             </Button>
           </AnchorLink>
           <AnchorLink href='#works' style={{
@@ -35,7 +35,15 @@ const Navbar: React.FC = () => {
             color: 'inherit'
           }}>
             <Button color='inherit'>
-              Works
+              WORKS
+            </Button>
+          </AnchorLink>
+          <AnchorLink href='#skills' style={{
+            textDecoration: 'none',
+            color: 'inherit'
+          }}>
+            <Button color='inherit'>
+              SKILLS
             </Button>
           </AnchorLink>
           <AnchorLink href='#contact' style={{
@@ -48,6 +56,7 @@ const Navbar: React.FC = () => {
           </AnchorLink>
         </Toolbar>
       </AppBar>
+      </div>
     </>
   );
 }

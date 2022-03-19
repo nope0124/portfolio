@@ -5,20 +5,14 @@ import Typography from '@material-ui/core/Typography'
 const About: React.FC = () => {
   return (
     <>
-      <Box p={2}>
-        <Box display='flex' justifyContent='center' p={1}>
-          <Typography variant='h5' >
-            About
-          </Typography>
-        </Box>
-        <Box display='flex' justifyContent='center' p={1}>
-          <Typography variant='body1' align='left'>
-            私の名前は田中太郎です。<br />
-            東京でWebエンジニアとして働いています。<br />
-            好きな言語・フレームワークはTypeScriptとReactです。
-          </Typography>
-        </Box>
-      </Box>
+      <div className="container mx-auto text-gray-700 mt-14 pt-14 font-bold">
+        <div className="flex flex-col justify-center items-center px-8">
+          <span className="text-4xl text-gray-800 mb-8">About</span>
+          <div className="flex flex-wrap mx-2 text-center">
+            競プロをやっていました。<br/>現在はゲーム開発を主に行なっています。
+          </div>
+        </div>
+      </div>
     </>
   );
 }

@@ -5,8 +5,9 @@ import About from './components/About'
 import Skills from './components/Skills'
 import Works from './components/Works'
 import Contact from './components/Contact'
-// 追記
-import ScrollUp from './utils/ScrollUp'
+import Timeline from './components/Timeline'
+import Footer from './components/Footer'
+
 
 const App: React.FC = () => {
   return (
@@ -20,16 +21,21 @@ const App: React.FC = () => {
       <section id='about'>
         <About />
       </section>
-      <section id='skills'>
-        <Skills />
+      <section id='timeline'>
+        <Timeline />
       </section>
       <section id='works'>
         <Works />
       </section>
+      <section id='skills'>
+        <Skills />
+      </section>
       <section id='contact'>
         <Contact />
       </section>
-      <ScrollUp />
+      <section>
+        <Footer />
+      </section>
     </>
   );
 }

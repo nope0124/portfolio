@@ -20,24 +20,21 @@ const MyAvatar: React.FC = () => {
 
   return (
     <>
-      <Box p={2}>
-        <Box display='flex' justifyContent='center' p={1} >
-          <Avatar
-            alt='Taro Tanaka'
-            src={ImageFile}
-            className={classes.large}
-          />
-        </Box>
-        <Box display='flex' justifyContent='center' p={1} >
-          <Typography variant='h5' >
-            TARO TANAKA
-          </Typography>
-        </Box>
-        <Box display='flex' justifyContent='center' p={1} >
-          <Typography variant='body1'>
-            Web Enginner
-          </Typography>
-        </Box>
+      <Box display='flex' justifyContent='center' p={1} >
+        <Avatar
+          alt='Ryota Kamimura'
+          src={ImageFile}
+          className={classes.large}
+        />
+      </Box>
+      <Box display='flex' justifyContent='center' p={1} >
+        <Typography variant='body1' align="center">
+          <div className="text-gray-800 font-bold">
+            Name:  上村亮太(nope)<br />
+            University:  筑波大学新B4<br />
+            Interest:  ゲーム開発 / 機械学習 / 競プロ
+          </div>
+        </Typography>
       </Box>
     </>
   );

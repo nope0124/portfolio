@@ -1,74 +1,128 @@
-import React from 'react'
-import Box from '@material-ui/core/Box'
-import Typography from '@material-ui/core/Typography'
+import React from "react"
+import TwitterBotClassifier from '../static/images/works/twitter_bot_classifier.jpg'
+import CalculatorCanvas from '../static/images/works/calculator_canvas.jpg'
+import MisereNim from '../static/images/works/misere_nim.jpg'
+import FifteenPuzzle from '../static/images/works/fifteen_puzzle.jpg'
+import Ramen from '../static/images/works/ramen.jpg'
 
-import { makeStyles } from '@material-ui/core/styles'
-import List from '@material-ui/core/List'
-import ListItem, { ListItemProps } from '@material-ui/core/ListItem'
-import ListItemText from '@material-ui/core/ListItemText'
-import ListItemAvatar from '@material-ui/core/ListItemAvatar'
-import Avatar from '@material-ui/core/Avatar'
-import FolderIcon from '@material-ui/icons/Folder'
+import LaunchIcon from '@material-ui/icons/Launch'
+import GitHubIcon from '@material-ui/icons/GitHub'
+import Link from '@material-ui/core/Link'
+import { green, blue, purple } from '@material-ui/core/colors'
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    width: 770,
-    maxWidth: '100%',
-  },
-}));
-
-function ListItemLink(props: ListItemProps<'a', { button?: true }>) {
-  return <ListItem button component="a" {...props} />;
+interface CardProps {
+  links: { [key: string]: string }
+  alt: string
+  src: string
+  title: string
+  description: string
+  tags: string[]
+  date: string
 }
 
-const Works: React.FC = () => {
-  const classes = useStyles();
-
+const Card = (props: CardProps) => {
   return (
-    <>
-      <Box p={2}>
-        <Box display='flex' justifyContent='center' p={1} >
-          <Typography variant='h5' >
-            Works
-          </Typography>
-        </Box>
-        <Box display='flex' justifyContent='center' p={1} >
-          <List className={classes.root}>
-            <ListItem>
-              <ListItemLink href='#'>
-                <ListItemAvatar>
-                  <Avatar>
-                    <FolderIcon />
-                  </Avatar>
-                </ListItemAvatar>
-                <ListItemText primary='Work1' secondary='Work1です。' />
-              </ListItemLink>
-            </ListItem>
-            <ListItem>
-              <ListItemLink href='#'>
-                <ListItemAvatar>
-                  <Avatar>
-                    <FolderIcon />
-                  </Avatar>
-                </ListItemAvatar>
-                <ListItemText primary='Work2' secondary='Work2です。' />
-              </ListItemLink>
-            </ListItem>
-            <ListItem>
-              <ListItemLink href='#'>
-                <ListItemAvatar>
-                  <Avatar>
-                    <FolderIcon />
-                  </Avatar>
-                </ListItemAvatar>
-                <ListItemText primary='Work3' secondary='Work3です。' />
-              </ListItemLink>
-            </ListItem>
-          </List>
-        </Box>
-      </Box>
-    </>
-  );
+    <div className="xl:w-1/3 md:w-1/2 sm:w-full p-4">
+      <div className="bg-white rounded-none p-6 border-4 border-black h-full ml-auto mr-auto">
+        <img
+          loading="lazy"
+          decoding="async"
+          src={`${props.src}`}
+          alt={props.alt}
+          className="h-48 w-full object-cover object-center mb-8"
+        />
+        <h3 className="tracking-wide text-gray-800 text-xl font-bold">
+          {props.title}
+        </h3>
+        <span className="text-xs mr-2">{props.date}</span>
+        {props.links["GitHub"] != "" && (
+          <Link href={`${props.links["GitHub"]}`} target="_blank">
+            <GitHubIcon className="mr-2" />
+          </Link>
+          )}
+          {props.links["External"] != "" && (
+            <Link href={`${props.links["External"]}`} target="_blank">
+              <LaunchIcon className="mr-2"/>
+            </Link>
+          )}
+        
+        <p className="leading-relaxed text-gray-700 text-base mt-4">
+          {props.description}
+        </p>
+        
+        {props.tags.map((tag: string) =>
+          <p className="mt-2 mr-2 text-xs inline-flex items-center font-bold px-3 py-1 rounded-full bg-white text-gray-700 border">{tag}</p>
+        )}
+      </div>
+    </div>
+  )
 }
 
-export default Works;
+const Works = () => {
+  
+  return (
+    <div className="container mx-auto text-gray-700 mt-14 pt-14 font-bold">
+      <div className="flex flex-col justify-center items-center px-8">
+        <span className="text-4xl text-gray-800 mb-8">Works</span>
+        <div className="flex flex-wrap mx-2">
+          <Card
+            title="考察ゲーム"
+            src={MisereNim}
+            alt="考察ゲーム"
+            description="数年前の頭脳王で出題された、ターン制でコンピュータと駒を取り合うゲームです。"
+            links={{"GitHub": "", "External": "https://apps.apple.com/au/app/misere-nim/id1584398139"}}
+            tags={["Unity(C#)"]}
+            date="2021/09"
+          />
+
+          <Card
+            title="電卓キャンバス"
+            src={CalculatorCanvas}
+            alt="電卓キャンバス"
+            description="描いた数式を自動で計算してくれます。現在符号は+-×÷に対応しています。"
+            links={{"GitHub": "https://github.com/nope0124/Calculator", "External": "https://calculatorcanvas.herokuapp.com"}}
+            tags={["Django(Python)", "JavaScript"]}
+            date="2021/03"
+          />
+
+          <Card
+            title="RAMEN"
+            src={Ramen}
+            alt="RAMEN"
+            description="enPiT-BizSysD x 筑波大学にて、マイナンバーカードを用い仮想通貨を送受金するシステムを試作しました。結果、完成には至らず送金部分のみ完成しました。"
+            links={{"GitHub": "https://github.com/enpitut2021/ramen-frontend", "External": ""}}
+            tags={["Plasmic"]}
+            date="2021/07"
+          />
+          
+          
+          <Card
+            title="15パズル"
+            src={FifteenPuzzle}
+            alt="15パズル"
+            description="有名な15パズルです。Runボタンで最善手を示してくれます。"
+            links={{"GitHub": "", "External": "http://nope.soudesune.net/dotinstall/slidingpuzzle/index.html"}}
+            tags={["JavaScript"]}
+            date="2020/07"
+          />
+
+          <Card
+            title="Twitter Bot Classifier"
+            src={TwitterBotClassifier}
+            alt="Twitter Bot Classifier"
+            description="FF数などのユーザー情報を元に、そのユーザーがどれだけBotに近いかを測定します。"
+            links={{"GitHub": "https://github.com/nope0124/TwitterBotClassifier", "External": ""}}
+            tags={["Django(Python)"]}
+            date="2021/03"
+          />
+
+          
+          
+          
+          
+        </div>
+      </div>
+    </div>
+  )
+}
+export default Works

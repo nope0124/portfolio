@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/portfolio-sample/static/css/main.32cd90d7.css",
-    "main.js": "/portfolio-sample/static/js/main.04696400.js",
-    "static/js/787.d404b7c0.chunk.js": "/portfolio-sample/static/js/787.d404b7c0.chunk.js",
-    "static/media/ramen.jpg": "/portfolio-sample/static/media/ramen.dabc5fcc358ae84356e5.jpg",
-    "static/media/misere_nim.jpg": "/portfolio-sample/static/media/misere_nim.226a816c514bd75849ac.jpg",
-    "static/media/calculator_canvas.jpg": "/portfolio-sample/static/media/calculator_canvas.6d71046d2f8ea4c8c727.jpg",
-    "static/media/processing.png": "/portfolio-sample/static/media/processing.9a256806c7aa334a962b.png",
-    "static/media/fifteen_puzzle.jpg": "/portfolio-sample/static/media/fifteen_puzzle.e55c30781a4a58b88873.jpg",
-    "static/media/twitter_bot_classifier.jpg": "/portfolio-sample/static/media/twitter_bot_classifier.8087493c501cd1ec8b99.jpg",
-    "static/media/ruby_on_rails.png": "/portfolio-sample/static/media/ruby_on_rails.139a3009cc004110f973.png",
-    "static/media/python.png": "/portfolio-sample/static/media/python.b8b746567b0591cf0ac4.png",
-    "static/media/c_plusplus.png": "/portfolio-sample/static/media/c_plusplus.efde7692e7a25f737b68.png",
-    "static/media/my_avatar.jpg": "/portfolio-sample/static/media/my_avatar.d4906334471e3ddc6c5e.jpg",
-    "index.html": "/portfolio-sample/index.html",
-    "main.32cd90d7.css.map": "/portfolio-sample/static/css/main.32cd90d7.css.map",
-    "main.04696400.js.map": "/portfolio-sample/static/js/main.04696400.js.map",
-    "787.d404b7c0.chunk.js.map": "/portfolio-sample/static/js/787.d404b7c0.chunk.js.map"
+    "main.css": "/portfolio/static/css/main.32cd90d7.css",
+    "main.js": "/portfolio/static/js/main.57eee65e.js",
+    "static/js/787.d404b7c0.chunk.js": "/portfolio/static/js/787.d404b7c0.chunk.js",
+    "static/media/ramen.jpg": "/portfolio/static/media/ramen.dabc5fcc358ae84356e5.jpg",
+    "static/media/misere_nim.jpg": "/portfolio/static/media/misere_nim.226a816c514bd75849ac.jpg",
+    "static/media/calculator_canvas.jpg": "/portfolio/static/media/calculator_canvas.6d71046d2f8ea4c8c727.jpg",
+    "static/media/processing.png": "/portfolio/static/media/processing.9a256806c7aa334a962b.png",
+    "static/media/fifteen_puzzle.jpg": "/portfolio/static/media/fifteen_puzzle.e55c30781a4a58b88873.jpg",
+    "static/media/twitter_bot_classifier.jpg": "/portfolio/static/media/twitter_bot_classifier.8087493c501cd1ec8b99.jpg",
+    "static/media/ruby_on_rails.png": "/portfolio/static/media/ruby_on_rails.139a3009cc004110f973.png",
+    "static/media/python.png": "/portfolio/static/media/python.b8b746567b0591cf0ac4.png",
+    "static/media/c_plusplus.png": "/portfolio/static/media/c_plusplus.efde7692e7a25f737b68.png",
+    "static/media/my_avatar.jpg": "/portfolio/static/media/my_avatar.d4906334471e3ddc6c5e.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.32cd90d7.css.map": "/portfolio/static/css/main.32cd90d7.css.map",
+    "main.57eee65e.js.map": "/portfolio/static/js/main.57eee65e.js.map",
+    "787.d404b7c0.chunk.js.map": "/portfolio/static/js/787.d404b7c0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.32cd90d7.css",
-    "static/js/main.04696400.js"
+    "static/js/main.57eee65e.js"
   ]
 }

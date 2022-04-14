@@ -2,6 +2,7 @@ import React from "react"
 import TwitterBotClassifier from '../static/images/works/twitter_bot_classifier.jpg'
 import CalculatorCanvas from '../static/images/works/calculator_canvas.jpg'
 import MisereNim from '../static/images/works/misere_nim.jpg'
+import SkatePuzzle from '../static/images/works/skate_puzzle.png'
 import FifteenPuzzle from '../static/images/works/fifteen_puzzle.jpg'
 import Ramen from '../static/images/works/ramen.jpg'
 
@@ -73,6 +74,16 @@ const Works = () => {
             links={{"GitHub": "", "External": "https://apps.apple.com/au/app/misere-nim/id1584398139"}}
             tags={["Unity(C#)"]}
             date="2021/09"
+          />
+
+          <Card
+            title="スケートパズル"
+            src={SkatePuzzle}
+            alt="スケートパズル"
+            description="進んだ方向に滑る氷の床を活用して、ゴールを目指すゲームです。"
+            links={{"GitHub": "", "External": "https://apps.apple.com/au/app/skate-puzzle/id1617595229"}}
+            tags={["Unity(C#)"]}
+            date="2022/04"
           />
 
           <Card

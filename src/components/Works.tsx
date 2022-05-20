@@ -71,7 +71,7 @@ const Works = () => {
             src={MisereNim}
             alt="考察ゲーム"
             description="数年前の頭脳王で出題された、ターン制でコンピュータと駒を取り合うゲームです。"
-            links={{"GitHub": "", "External": "https://apps.apple.com/au/app/misere-nim/id1584398139"}}
+            links={{"GitHub": "https://github.com/nope0124/misere-nim", "External": "https://apps.apple.com/au/app/misere-nim/id1584398139"}}
             tags={["Unity(C#)"]}
             date="2021/09"
           />
@@ -81,7 +81,7 @@ const Works = () => {
             src={SkatePuzzle}
             alt="スケートパズル"
             description="進んだ方向に滑る氷の床を活用して、ゴールを目指すゲームです。"
-            links={{"GitHub": "", "External": "https://apps.apple.com/au/app/skate-puzzle/id1617595229"}}
+            links={{"GitHub": "https://github.com/nope0124/skate-puzzle", "External": "https://apps.apple.com/au/app/skate-puzzle/id1617595229"}}
             tags={["Unity(C#)"]}
             date="2022/04"
           />

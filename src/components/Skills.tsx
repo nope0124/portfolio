@@ -4,7 +4,7 @@ import CPlusPlusLogo from '../static/images/skills/c_plusplus.png'
 import PythonLogo from '../static/images/skills/python.png'
 import RubyOnRailsLogo from '../static/images/skills/ruby_on_rails.png'
 import CSharpLogo from '../static/images/skills/c_sharp.png'
-import ProcessingLogo from '../static/images/skills/processing.png'
+import TypeScriptLogo from '../static/images/skills/typescript.png'
 
 
 interface CardProps {
@@ -73,10 +73,10 @@ const Skills: React.FC = () => {
           />
 
           <Card
-            title="Processing"
-            src={ProcessingLogo}
-            alt="Processingロゴ"
-            description="デザイン作成"
+            title="TypeScript"
+            src={TypeScriptLogo}
+            alt="TypeScriptロゴ"
+            description="ポートフォリオ作成"
           />
           
         </div>

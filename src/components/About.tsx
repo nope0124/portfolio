@@ -9,7 +9,7 @@ const About: React.FC = () => {
         <div className="flex flex-col justify-center items-center px-8">
           <span className="text-4xl text-gray-800 mb-8">About</span>
           <div className="flex flex-wrap mx-2 text-center">
-            競プロをやっていました。<br/>現在はゲーム開発を主に行なっています。
+            競プロをやっていました。<br/>現在はゲーム開発、Web開発を主に行なっています。
           </div>
         </div>
       </div>

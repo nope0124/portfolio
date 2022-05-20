@@ -35,11 +35,12 @@ const Timeline = () => {
             <Item date="2019/11 ~ 2020/12" title="日出学園パソコン部部活動指導員" />
             <Item date="2020/05" title="AtCoder水達成" />
             <Item date="2021/03" title="ICPC Asia Yokohama Regional 2020 (Team:shichifuku)" />
-            <Item date="2021/07 ~ " title="DMM Web Camp Internship" />
+            <Item date="2021/07 ~ " title="Infratop Internship" />
             <Item date="2021/07" title="enPiT夏合宿でアジャイル開発を経験" />
             <Item date="2021/09" title="自作ゲームをAppStoreで初配信" />
             <Item date="2021/11" title="Cygames Internship" />
             <Item date="2022/03" title="ICPC Asia Yokohama Regional 2021 (Team:shichifuku)" />
+            <Item date="現在" title="Webアプリ開発中..." />
           </ul>
         </div>
       </div>

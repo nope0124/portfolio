@@ -1,5 +1,5 @@
 import React from "react"
-import TwitterBotClassifier from '../static/images/works/twitter_bot_classifier.jpg'
+import LinkHub from '../static/images/works/linkhub.png'
 import CalculatorCanvas from '../static/images/works/calculator_canvas.jpg'
 import MisereNim from '../static/images/works/misere_nim.jpg'
 import SkatePuzzle from '../static/images/works/skate_puzzle.png'
@@ -67,6 +67,15 @@ const Works = () => {
         <span className="text-4xl text-gray-800 mb-8">Works</span>
         <div className="flex flex-wrap mx-2">
           <Card
+            title="LinkHub"
+            src={LinkHub}
+            alt="LinkHub"
+            description="リンク集を共有するサイトです。日常で得た知見、役立つ情報を他のユーザーたちと共有していきましょう。"
+            links={{"GitHub": "", "External": "http://colink.jp"}}
+            tags={["Ruby on Rails", "AWS"]}
+            date="2022/07"
+          />
+          <Card
             title="考察ゲーム"
             src={MisereNim}
             alt="考察ゲーム"
@@ -117,15 +126,7 @@ const Works = () => {
             date="2020/07"
           />
 
-          <Card
-            title="Twitter Bot Classifier"
-            src={TwitterBotClassifier}
-            alt="Twitter Bot Classifier"
-            description="FF数などのユーザー情報を元に、そのユーザーがどれだけBotに近いかを測定します。"
-            links={{"GitHub": "https://github.com/nope0124/TwitterBotClassifier", "External": ""}}
-            tags={["Django(Python)"]}
-            date="2021/03"
-          />
+          
 
           
           

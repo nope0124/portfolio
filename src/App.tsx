@@ -10,6 +10,7 @@ import Footer from './components/Footer'
 
 
 const App: React.FC = () => {
+  
   return (
     <>
       <section>

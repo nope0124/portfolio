@@ -69,7 +69,7 @@ const Skills: React.FC = () => {
             title="Ruby on Rails"
             src={RubyOnRailsLogo}
             alt="RubyOnRailsロゴ"
-            description="Webアプリ開発"
+            description="Webサービス開発"
           />
 
           <Card

@@ -31,7 +31,7 @@ const MyAvatar: React.FC = () => {
         <Typography variant='body1' align="center">
           <div className="text-gray-800 font-bold">
             Name:  上村亮太(nope)<br />
-            University:  筑波大学新B4<br />
+            University:  筑波大学大学院M1<br />
             Interest:  ゲーム開発 / 機械学習 / 競プロ
           </div>
         </Typography>

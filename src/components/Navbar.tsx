@@ -22,20 +22,20 @@ const Navbar: React.FC = () => {
               ABOUT
             </Button>
           </AnchorLink>
-          <AnchorLink href='#timeline' style={{
-            textDecoration: 'none',
-            color: 'inherit'
-          }}>
-            <Button>
-              TIMELINE
-            </Button>
-          </AnchorLink>
           <AnchorLink href='#works' style={{
             textDecoration: 'none',
             color: 'inherit'
           }}>
             <Button color='inherit'>
               WORKS
+            </Button>
+          </AnchorLink>
+          <AnchorLink href='#timeline' style={{
+            textDecoration: 'none',
+            color: 'inherit'
+          }}>
+            <Button>
+              TIMELINE
             </Button>
           </AnchorLink>
           <AnchorLink href='#skills' style={{

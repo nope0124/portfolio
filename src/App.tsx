@@ -22,11 +22,11 @@ const App: React.FC = () => {
       <section id='about'>
         <About />
       </section>
-      <section id='timeline'>
-        <Timeline />
-      </section>
       <section id='works'>
         <Works />
+      </section>
+      <section id='timeline'>
+        <Timeline />
       </section>
       <section id='skills'>
         <Skills />

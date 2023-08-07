@@ -31,16 +31,17 @@ const Timeline = () => {
             style={{ left: "15px" }}
           ></div>
           <ul className="list-none m-0 p-0">
-            <Item date="2019/04" title="筑波大学入学" />
-            <Item date="2019/11 ~ 2020/12" title="日出学園パソコン部部活動指導員" />
+            <Item date="2023/07" title="株式会社Cygames サマーインターン" />
+            <Item date="2023/04" title="大学院入学" />
+            <Item date="2023/03" title="PIXIV SPRING BOOT CAMP 2023" />
+            <Item date="2022/11 ~ " title="株式会社DONUTS 長期インターン" />
+            <Item date="2022/03" title="ICPCアジア地区横浜大会2021出場 (Team:shichifuku)" />
+            <Item date="2021/11" title="株式会社Cygames 短期インターン" />
+            <Item date="2021/07 ~ " title="株式会社インフラトップ 長期インターン" />
+            <Item date="2021/03" title="ICPCアジア地区横浜大会2020出場 (Team:shichifuku)" />
             <Item date="2020/05" title="AtCoder水達成" />
-            <Item date="2021/03" title="ICPC Asia Yokohama Regional 2020 (Team:shichifuku)" />
-            <Item date="2021/07 ~ " title="Infratop Internship" />
-            <Item date="2021/07" title="enPiT夏合宿でアジャイル開発を経験" />
-            <Item date="2021/09" title="自作ゲームをApp Storeで初配信" />
-            <Item date="2021/11" title="Cygames Internship" />
-            <Item date="2022/03" title="ICPC Asia Yokohama Regional 2021 (Team:shichifuku)" />
-            <Item date="2022/07" title="Webサービス「LinkHub」をリリース" />
+            <Item date="2019/11 ~ 2020/12" title="母校パソコン部部活動指導員" />
+            <Item date="2019/04" title="大学入学" />
           </ul>
         </div>
       </div>

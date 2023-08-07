@@ -1,10 +1,15 @@
 import React from "react"
+import Tsumihoroboshi from '../static/images/works/tsumihoroboshi.png'
+import AutoBicycleBlinker from '../static/images/works/auto_bicycle_blinker.gif'
+import MusclePit from '../static/images/works/muscle_pit.jpg'
 import LinkHub from '../static/images/works/linkhub.png'
+import Nagi from '../static/images/works/hisakawa.gif'
 import CalculatorCanvas from '../static/images/works/calculator_canvas.jpg'
 import MisereNim from '../static/images/works/misere_nim.jpg'
 import SkatePuzzle from '../static/images/works/skate_puzzle.png'
 import FifteenPuzzle from '../static/images/works/fifteen_puzzle.jpg'
 import Ramen from '../static/images/works/ramen.jpg'
+import Portfolio from '../static/images/my_avatar.jpg'
 
 import LaunchIcon from '@material-ui/icons/Launch'
 import GitHubIcon from '@material-ui/icons/GitHub'
@@ -67,14 +72,65 @@ const Works = () => {
         <span className="text-4xl text-gray-800 mb-8">Works</span>
         <div className="flex flex-wrap mx-2">
           <Card
+            title="Tsumihoroboshi"
+            src={Tsumihoroboshi}
+            alt="Tsumihoroboshi"
+            description="enPiT-BizSysD x 筑波大学にて積読を解決することを目的としたプロダクトを開発しました。スクラムマスターとして機能開発の進捗管理を行いました。"
+            links={{"GitHub": "https://github.com/enpitut2023/tsumihoroboshi", "External": ""}}
+            tags={["Ruby on Rails", "Heroku"]}
+            date="2023/07"
+          />
+
+          <Card
+            title="Auto自転車ウインカー"
+            src={AutoBicycleBlinker}
+            alt="Auto自転車ウインカー"
+            description="目的地までのナビをしてくれる自転車用のIoTウインカーです。交差点で左右どちらに曲がればいいかを教えてくれます。"
+            links={{"GitHub": "https://github.com/nope0124/auto-bicycle-blinker", "External": ""}}
+            tags={["Java", "RaspberryPi"]}
+            date="2023/06"
+          />
+
+          <Card
+            title="MusclePit"
+            src={MusclePit}
+            alt="MusclePit"
+            description="痩身サロン MusclePitのHPを作成しました。現在運用を行っています。"
+            links={{"GitHub": "", "External": "https://muscle-pit.jp"}}
+            tags={["HTML/CSS"]}
+            date="2022/11"
+          />
+
+          <Card
             title="LinkHub"
             src={LinkHub}
             alt="LinkHub"
-            description="リンク集を共有するサイトです。日常で得た知見、役立つ情報を他のユーザーたちと共有していきましょう。"
-            links={{"GitHub": "", "External": "http://colink.jp"}}
+            description="リンク集を共有するサービスです。日常で得た知見、役立つ情報を他のユーザーたちと共有していきましょう。技育展2022にて登壇しました。"
+            links={{"GitHub": "", "External": "https://colink.jp/nope/themes/NjgC12"}}
             tags={["Ruby on Rails", "AWS"]}
             date="2022/07"
           />
+
+          <Card
+            title="スケートパズル"
+            src={SkatePuzzle}
+            alt="スケートパズル"
+            description="進んだ方向に滑る氷の床を活用して、ゴールを目指すゲームです。"
+            links={{"GitHub": "https://github.com/nope0124/skate-puzzle", "External": "https://apps.apple.com/au/app/skate-puzzle/id1617595229"}}
+            tags={["Unity(C#)", "Firebase"]}
+            date="2022/04"
+          />
+
+          <Card
+            title="久川姉妹の顔識別"
+            src={Nagi}
+            alt=""
+            description="SSD_Kerasを使って久川姉妹の顔識別をしました。精度は7割くらいです。かわいい。"
+            links={{"GitHub": "https://github.com/nope0124/ssd_keras_hisakawa", "External": ""}}
+            tags={["Python"]}
+            date="2022/04"
+          />
+
           <Card
             title="考察ゲーム"
             src={MisereNim}
@@ -86,13 +142,13 @@ const Works = () => {
           />
 
           <Card
-            title="スケートパズル"
-            src={SkatePuzzle}
-            alt="スケートパズル"
-            description="進んだ方向に滑る氷の床を活用して、ゴールを目指すゲームです。"
-            links={{"GitHub": "https://github.com/nope0124/skate-puzzle", "External": "https://apps.apple.com/au/app/skate-puzzle/id1617595229"}}
-            tags={["Unity(C#)"]}
-            date="2022/04"
+            title="RAMEN"
+            src={Ramen}
+            alt="RAMEN"
+            description="enPiT-BizSysD x 筑波大学にて、マイナンバーカードを用い仮想通貨を送受金するシステムを試作しました。"
+            links={{"GitHub": "https://github.com/enpitut2021/ramen-frontend", "External": ""}}
+            tags={["Plasmic(TypeScript)"]}
+            date="2021/07"
           />
 
           <Card
@@ -100,21 +156,20 @@ const Works = () => {
             src={CalculatorCanvas}
             alt="電卓キャンバス"
             description="描いた数式を自動で計算してくれます。現在符号は+-×÷に対応しています。"
-            links={{"GitHub": "https://github.com/nope0124/Calculator", "External": "https://calculatorcanvas.herokuapp.com"}}
+            links={{"GitHub": "https://github.com/nope0124/Calculator", "External": ""}}
             tags={["Django(Python)", "JavaScript"]}
             date="2021/03"
           />
-
-          <Card
-            title="RAMEN"
-            src={Ramen}
-            alt="RAMEN"
-            description="enPiT-BizSysD x 筑波大学にて、マイナンバーカードを用い仮想通貨を送受金するシステムを試作しました。結果、完成には至らず送金部分のみ完成しました。"
-            links={{"GitHub": "https://github.com/enpitut2021/ramen-frontend", "External": ""}}
-            tags={["Plasmic"]}
-            date="2021/07"
-          />
           
+          <Card
+            title="ポートフォリオサイト"
+            src={Portfolio}
+            alt="ポートフォリオサイト"
+            description="自分のポートフォリオサイトです。気分で更新します。"
+            links={{"GitHub": "https://github.com/nope0124/portfolio", "External": ""}}
+            tags={["React"]}
+            date="2021/03"
+          />
           
           <Card
             title="15パズル"
@@ -125,12 +180,6 @@ const Works = () => {
             tags={["JavaScript"]}
             date="2020/07"
           />
-
-          
-
-          
-          
-          
           
         </div>
       </div>

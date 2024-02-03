@@ -1,4 +1,5 @@
 import React from "react"
+import Promisee from '../static/images/works/promisee.jpg'
 import Tsumihoroboshi from '../static/images/works/tsumihoroboshi.png'
 import AutoBicycleBlinker from '../static/images/works/auto_bicycle_blinker.gif'
 import MusclePit from '../static/images/works/muscle_pit.jpg'
@@ -71,6 +72,15 @@ const Works = () => {
       <div className="flex flex-col justify-center items-center px-8">
         <span className="text-4xl text-gray-800 mb-8">Works</span>
         <div className="flex flex-wrap mx-2">
+          <Card
+            title="promisee"
+            src={Promisee}
+            alt="promisee"
+            description="enPiT-BizSysD x 筑波大学にて友達との約束に遅刻したくない人向けのリマインダーLINEBotを開発しました。"
+            links={{"GitHub": "https://github.com/enpitut2023/promisee_linebot", "External": "https://liff.line.me/1645278921-kWRPP32q/?accountId=745fdrtq"}}
+            tags={["LINEBot", "Flask"]}
+            date="2024/01"
+          />
           <Card
             title="Tsumihoroboshi"
             src={Tsumihoroboshi}

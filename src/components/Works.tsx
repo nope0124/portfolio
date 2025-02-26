@@ -1,4 +1,6 @@
 import React from "react"
+
+import MBTY from '../static/images/works/mbty_exam.gif'
 import Promisee from '../static/images/works/promisee.jpg'
 import Tsumihoroboshi from '../static/images/works/tsumihoroboshi.png'
 import AutoBicycleBlinker from '../static/images/works/auto_bicycle_blinker.gif'
@@ -73,6 +75,24 @@ const Works = () => {
         <span className="text-4xl text-gray-800 mb-8">Works</span>
         <div className="flex flex-wrap mx-2">
           <Card
+            title="MBTY試験"
+            src={MBTY}
+            alt="MBTY試験"
+            description='16性格タイプと、16性格タイプ"っぽい"文字列を見分けるゲームです。50問正解してMBTY合格を目指しましょう。'
+            links={{"GitHub": "", "External": "https://unityroom.com/games/mbty_exam"}}
+            tags={["Unity(C#)"]}
+            date="2024/08"
+          />
+          <Card
+            title="ポケモン界における最強タイプを遺伝的アルゴリズムで求めてみた"
+            src={Portfolio}
+            alt="pokemon"
+            description="遺伝的アルゴリズムによるシミュレーションでポケモン界における最強タイプを求めました。第25回進化計算研究会で発表しました。"
+            links={{"GitHub": "https://github.com/nope0124/pokemon-genetic-algorithm", "External": "https://qiita.com/nope0124/items/507d9097c834926b04ca"}}
+            tags={["Python"]}
+            date="2024/02"
+          />
+          <Card
             title="promisee"
             src={Promisee}
             alt="promisee"
@@ -105,7 +125,7 @@ const Works = () => {
             title="MusclePit"
             src={MusclePit}
             alt="MusclePit"
-            description="痩身サロン MusclePitのHPを作成しました。現在運用を行っています。"
+            description="痩身サロン MusclePitのHPを作成しました。"
             links={{"GitHub": "", "External": "https://muscle-pit.jp"}}
             tags={["HTML/CSS"]}
             date="2022/11"
@@ -151,7 +171,7 @@ const Works = () => {
             date="2021/09"
           />
 
-          <Card
+          {/* <Card
             title="RAMEN"
             src={Ramen}
             alt="RAMEN"
@@ -189,7 +209,7 @@ const Works = () => {
             links={{"GitHub": "", "External": "http://nope.soudesune.net/dotinstall/slidingpuzzle/index.html"}}
             tags={["JavaScript"]}
             date="2020/07"
-          />
+          /> */}
           
         </div>
       </div>

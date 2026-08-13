@@ -1,8 +1,10 @@
+import { useEffect } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import { works, WorksGrid } from './Works'
 
 const WorksPage = () => {
+  useEffect(() => { window.scrollTo(0, 0) }, [])
   const featured = works.filter(w => w.featured)
   const others = works.filter(w => !w.featured)
 

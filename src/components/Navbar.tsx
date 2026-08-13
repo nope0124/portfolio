@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
           <Button onClick={() => scrollToSection('about')}>
             ABOUT
           </Button>
-          <Button color='inherit' onClick={() => scrollToSection('works')}>
+          <Button color='inherit' onClick={() => history.push('/works')}>
             WORKS
           </Button>
           <Button color='inherit' onClick={() => history.push('/videos')}>

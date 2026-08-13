@@ -1,8 +1,10 @@
+import { useEffect } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import { videos, sortVideos, VideoGrid } from './Videos'
 
 const VideosPage = () => {
+  useEffect(() => { window.scrollTo(0, 0) }, [])
   const featured = sortVideos(videos).filter(v => v.pinned || v.featured)
   const others = sortVideos(videos).filter(v => !v.pinned && !v.featured)
 

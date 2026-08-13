@@ -31,6 +31,7 @@ const Timeline = () => {
             style={{ left: "15px" }}
           ></div>
           <ul className="list-none m-0 p-0">
+            <Item date="2025/04 ~ " title="Webエンジニアとして勤務中" />
             <Item date="2023/11 ~ 2024/09" title="株式会社DONUTS ゲーム事業部 長期インターン" />
             <Item date="2023/09 ~ 2023/10" title="RECRUIT Internship for Engineers 2023"/>
             <Item date="2023/04" title="大学院入学" />

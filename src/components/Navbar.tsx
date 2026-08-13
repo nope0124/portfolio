@@ -1,10 +1,24 @@
 import React from 'react'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { useHistory, useLocation } from 'react-router-dom'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Button from '@material-ui/core/Button'
 
 const Navbar: React.FC = () => {
+  const history = useHistory()
+  const location = useLocation()
+
+  const scrollToSection = (sectionId: string) => {
+    if (location.pathname === '/') {
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' })
+    } else {
+      history.push('/')
+      setTimeout(() => {
+        document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' })
+      }, 100)
+    }
+  }
+
   return (
     <>
     <div className="mx-auto">
@@ -14,46 +28,24 @@ const Navbar: React.FC = () => {
         style={{ alignItems: 'center'}}
       >
         <Toolbar>
-          <AnchorLink href='#about' style={{
-            textDecoration: 'none',
-            color: 'inherit'
-          }}>
-            <Button>
-              ABOUT
-            </Button>
-          </AnchorLink>
-          <AnchorLink href='#works' style={{
-            textDecoration: 'none',
-            color: 'inherit'
-          }}>
-            <Button color='inherit'>
-              WORKS
-            </Button>
-          </AnchorLink>
-          <AnchorLink href='#timeline' style={{
-            textDecoration: 'none',
-            color: 'inherit'
-          }}>
-            <Button>
-              TIMELINE
-            </Button>
-          </AnchorLink>
-          <AnchorLink href='#skills' style={{
-            textDecoration: 'none',
-            color: 'inherit'
-          }}>
-            <Button color='inherit'>
-              SKILLS
-            </Button>
-          </AnchorLink>
-          <AnchorLink href='#contact' style={{
-            textDecoration: 'none',
-            color: 'inherit'
-          }}>
-            <Button color='inherit'>
+          <Button onClick={() => scrollToSection('about')}>
+            ABOUT
+          </Button>
+          <Button color='inherit' onClick={() => scrollToSection('works')}>
+            WORKS
+          </Button>
+          <Button color='inherit' onClick={() => history.push('/videos')}>
+            VIDEOS
+          </Button>
+          <Button onClick={() => scrollToSection('timeline')}>
+            TIMELINE
+          </Button>
+          <Button color='inherit' onClick={() => scrollToSection('skills')}>
+            SKILLS
+          </Button>
+          <Button color='inherit' onClick={() => scrollToSection('contact')}>
             CONTACT
-            </Button>
-          </AnchorLink>
+          </Button>
         </Toolbar>
       </AppBar>
       </div>
